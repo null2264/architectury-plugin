@@ -28,6 +28,7 @@ sourceCompatibility = targetCompatibility = 1.8
 repositories {
     maven { url "https://maven.fabricmc.net/" }
     maven { url "https://maven.minecraftforge.net/" }
+    maven { url "https://maven.aap.my.id/" }
     maven { url "https://maven.shedaniel.me/" }
     gradlePluginPortal()
     mavenLocal()
@@ -156,9 +157,9 @@ publishing {
     repositories {
         if (System.getenv("MAVEN_PASS") != null) {
             maven {
-                url = "https://deploy.shedaniel.me/"
+                url = "https://maven.aap.my.id/"
                 credentials {
-                    username = "shedaniel"
+                    username = "admin"
                     password = System.getenv("MAVEN_PASS")
                 }
             }
